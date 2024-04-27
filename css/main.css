@@ -11,6 +11,10 @@ button.primary {
     border-style: none;
     background-color: #3882F6;
     color: #F9FAF8;
+
+    font-weight: bold;
+
+    width: 100px;
 }
 
 button.secondary {
@@ -20,6 +24,8 @@ button.secondary {
     border-color: #F9FAF8;
     background-color: transparent;
     color: #F9FAF8;
+
+    font-weight: bold;
 }
 
 .bg-dark {
@@ -30,11 +36,19 @@ button.secondary {
 .wrapper {
     display: flex;
     flex-direction: column;
+    gap: 2em;
 }
 
 .wrapper .section {
     height: 100vh;
     align-self: center;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    padding-bottom: 4em;
 }
 
 .navbar {
@@ -92,6 +106,9 @@ button.secondary {
     width: 75vw;
     display: flex;
     flex-direction: column;
+    align-self: center;
+
+    padding-bottom: 4em;
 }
 
 .content .content-heading {
@@ -100,17 +117,24 @@ button.secondary {
     justify-content: center;
 }
 
+.content .content-heading .title {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
 .content .content-body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 50px;
+    /* gap: 50px; */
     justify-content: space-evenly;
 }
 
 .content .content-body .card {
     display: flex;
     flex-direction: column;
+    flex-basis: 200px;
 }
 
 .content .content-body .card img {
@@ -134,19 +158,28 @@ button.secondary {
     font-style: italic;
     color: #1F2937;
 
-    padding-left: 4em;
-    padding-right: 4em;
+    padding: 4em;
+
+    padding-left: 6em;
+    padding-right: 6em;
+
+    margin-bottom: 3em;
+}
+
+.quote-wrapper .quote-text {
+    margin: 0;
 }
 
 .quote-wrapper .quote-author {
     display: flex;
     flex-direction: row;
     align-self: flex-end;
+    font-weight: bolder;
 }
 
 .banner-wrapper {
     display: flex;
-    width: 75vw;
+    width: 60vw;
     flex-direction: row;
     align-self: center;
     justify-content: space-around;
@@ -154,6 +187,19 @@ button.secondary {
     background-color: #3882F6;
     color: #F9FAF8;
     border-radius: 12px;
+
+    margin-bottom: 4em;
+    padding: 2em;
+}
+
+.banner-wrapper * {
+    margin: 0;
+}
+
+.banner-wrapper .banner-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .banner-wrapper .banner-content {
